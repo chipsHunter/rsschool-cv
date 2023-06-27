@@ -3,16 +3,20 @@
 **********************************************
 ## **CONTACTS**:
 * +375 (29) 996 41-74
-* E-mail: hvorostok8@gmail.com
-* Discord:
-* Telegram:  https://t.me/skelletonchik
-* GitHub:    [chipsHunter](https://github.com/chipsHunter)
+* E-mail:     hvorostok8@gmail.com
+* Discord:    chipsHunter
+* Telegram:   https://t.me/skelletonchik
+* GitHub:     [chipsHunter](https://github.com/chipsHunter)
 **********************************************
 ## **BRIEFLY**: 
 I'm a student of BSIUR, future systems engineer. 
 I'm highly motivated and disciplined person, who can set goal and achieve it. 
-My aim for near 5 years in Uni find field I'd like to self-develop in and become a programmer with strong skills in this area.
-I made self-development part of everyday life. Every day I try to practice my coding skills or learn something.
+My aim for near 3 years in Uni find field I'd like to self-develop in and become a programmer with strong skills in this area.
+**********************************************
+## **MY STRENGTH**:
+* highly disciplined
+* quick learner
+* deeply interested in coding
 **********************************************
 ## **COURSE**:
 * Completed course for Java beginners in 2022. 
