@@ -1,3 +1,3 @@
 # rsschool-cv
 
-https://chipsHunter.github.io/rsschool-cv/cv
+https://chipsHunter.github.io/rsschool-cv/
