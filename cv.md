@@ -27,6 +27,8 @@ My aim for near 3 years in Uni find field I'd like to self-develop in and become
 * Java:
 * C
 * HTML (basic skills)
+* SCC (basic skills)
+* Git (basic skills)
 **********************************************
 ## **LANGUAGES**:
 * Russian (native)
