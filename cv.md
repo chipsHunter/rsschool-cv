@@ -34,6 +34,7 @@ My aim for near 3 years in Uni find field I'd like to self-develop in and become
 * Russian (native)
 * Belarusian (native)
 * English (B1)
+* German (A1)
 **********************************************
 ## **CODE EXAMPLE**:
 * Java. _Return sum of all nums below entered can be devided into 3 and 5_ 
