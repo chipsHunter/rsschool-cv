@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<meta charset="utf-8">
 <title>my little app</title>
 <link rel="stylesheet" type="text/css" href="style.css">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -24,11 +25,8 @@
   </header>
   <main class = "main">
     <div class = "container main-container">
-    <img src="image.png" alt="my photo" class = "image">
-    <section class="section" id = "profile">
-      <h1 class = "section-title">Anastasia Hvorostova</h1>
-      <h2 class = "section-title" title = "i really want to be">front-end dev</h2>
-    </section>
+      <div class="left-panel">
+        <img src="image.png" alt="my photo" class = "image">
     <section class="section" id = "contacts">
       <h2 class="section-title">Contacts</h2>
       <ul class="section-item">
@@ -55,67 +53,74 @@
         <li>German (A1)</li>
       </ul>
     </section>
-    <section class="section" id = "briefly" >
-      <h2 class="section-title">Briefly</h2>
-      <p class="section-item">I'm a student of BSIUR, future systems engineer. 
-        I'm highly motivated and disciplined person, who can set goal and achieve it. 
-        My aim for near 3 years in Uni find field I'd like to self-develop in and become a programmer with strong skills in this area.</p>
-    </section>
-    <section class="section" id = "skills">
-      <h2 class="section-title">Skills</h2>
-      <ul class="section-item">
-        <li>Gamedev: Java</li>
-        <li>Interaction with computer memory: C</li>
-        <li>Front-end: HTML/CSS, JS</li>
-        <li>Version control: Git/GitHub</li>
-      </ul>
-    </section>
-    <section class="section" id = "code">
-      <h2 class="section-title">Code</h2>
-      <ul class="section-item">
-        <li>Java. Return sum of all nums below entered can be devided into 3 and 5
-          <pre>
-            <code class = "code">
-            public class Solution {
-
-            public int solution(int number) {
-              --number;
-              if(number <= 0)
-                return 0;
-              else {
-                if((number % 3 == 0) || (number % 5 == 0) )
-                  return number + solution(number);
-                else return solution(number);
+      </div>
+    <div class="right-panel">
+      <section class="section" id = "profile">
+        <h1 class = "section-title">Anastasia Hvorostova</h1>
+        <h2 class = "section-title" title = "i really want to be">front-end dev</h2>
+      </section>
+      <section class="section" id = "briefly" >
+        <h2 class="section-title">Briefly</h2>
+        <p class="section-item">I'm a student of BSIUR, future systems engineer. 
+          I'm highly motivated and disciplined person, who can set goal and achieve it. 
+          My aim for near 3 years in Uni find field I'd like to self-develop in and become a programmer with strong skills in this area.</p>
+      </section>
+      <section class="section" id = "skills">
+        <h2 class="section-title">Skills</h2>
+        <ul class="section-item">
+          <li>Gamedev: Java</li>
+          <li>Interaction with computer memory: C</li>
+          <li>Front-end: HTML/CSS, JS</li>
+          <li>Version control: Git/GitHub</li>
+        </ul>
+      </section>
+      <section class="section" id = "code">
+        <h2 class="section-title">Code</h2>
+        <ul class="section-item">
+          <li>Java. Return sum of all nums below entered can be devided into 3 and 5
+            <pre>
+              <code class = "code">
+              public class Solution {
+  
+              public int solution(int number) {
+                --number;
+                if(number <= 0)
+                  return 0;
+                else {
+                  if((number % 3 == 0) || (number % 5 == 0) )
+                    return number + solution(number);
+                  else return solution(number);
+                  }
+              }
+            }</code></pre>
+            
+          </li>
+          <li>C. Append node in binary tree
+            <pre>
+              <code class = "code">
+              struct TREE *insert_node(struct TREE *root, int value) {
+                if (root == NULL) {
+                    root = (struct TREE*)malloc(sizeof(struct TREE));
+                    root->value = value;
+                    root->leftChild = NULL;
+                    root->rightChild = NULL;
                 }
+                else {
+                    if (value < root->value) {
+                        root->leftChild = insert_node(root->leftChild, value);
+                    }
+                    else {
+                        root->rightChild = insert_node(root->rightChild, value);
+                    }
+                }
+                return root;
             }
-          }</code></pre>
-          
-        </li>
-        <li>C. Append node in binary tree
-          <pre>
-            <code class = "code">
-            struct TREE *insert_node(struct TREE *root, int value) {
-              if (root == NULL) {
-                  root = (struct TREE*)malloc(sizeof(struct TREE));
-                  root->value = value;
-                  root->leftChild = NULL;
-                  root->rightChild = NULL;
-              }
-              else {
-                  if (value < root->value) {
-                      root->leftChild = insert_node(root->leftChild, value);
-                  }
-                  else {
-                      root->rightChild = insert_node(root->rightChild, value);
-                  }
-              }
-              return root;
-          }
-          </code></pre>
-          
-        </li>
-      </ul>
-    </section>
+            </code></pre>
+            
+          </li>
+        </ul>
+      </section>
+    </div>
   </div>
   </main>
   <footer class = "footer">
