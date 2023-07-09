@@ -1,3 +1,179 @@
-h1 {
-  text-align: center;
+body {
+  font-family: 'Poppins', sans-serif;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 0;
+}
+
+.main-container {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 50px;
+}
+
+.left-panel {
+  padding: 100px 0 0 0;
+  width: 30%;
+  background-color: #f5b172;
+}
+
+.right-panel {
+  padding: 100px 0 0 0;
+  width: 70%;
+  background-color: #7fbbd2;
+}
+
+.top-container {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  margin-right: 0;
+  background-color: #4d3030;
+}
+
+.bottom-container {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: #313657;
+}
+
+.section {
+  padding: 50px;
+}
+
+@media (max-width: 768px) {
+  .section {
+    width: 100%;
+  }
+}
+
+.nav-list {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  list-style: none;
+}
+
+.nav-link {
+  padding: 0 20px;
+  line-height: 50px;
+  transition: .3s;
+  color:  #ffffff;
+}
+
+ .nav-link:hover {
+  color: #2e6c22;
+  transition: 0.5s;
+ }
+
+.section-item a {
+  color: #4b5167;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.section-item a:hover {
+  color: #51226c;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.section-title {
+  font-size: 20px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  position: relative;
+}
+
+.section-title::after {
+  content: " ";
+  position: absolute;
+  width: 100%; 
+  height: 2px; 
+  bottom: -5px; 
+  left: 0; 
+}
+
+.right-section-title {
+  color:#51226c;
+}
+
+.right-section-title::after {
+  background-color: #51226c;
+}
+
+.left-section-title {
+  color: #51226c;
+}
+
+.left-section-title::after {
+  background-color: #51226c;
+}
+
+.image {
+  height: 200px;
+  width: 220px;
+  margin: 0 100px;
+}
+
+.foot-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  margin: 0 70px;
+}
+
+.foot-item {
+  line-height: 50px;
+  transition: .3s;
+}
+
+.left-item {
+  display: flex;
+  justify-content: flex-start;
+  color:  #ffffff;
+  margin: 0 20px;
+  margin-left: 100px;
+}
+
+.left-item a:hover {
+  color: #2e6c22;
+  transition: 0.5s;
+}
+
+.icon::before {
+  content: '';
+  display: flex;
+  justify-content: flex-end;
+  background-image: url("assets/svg/rs_school_js.svg");
+  background-size: cover;
+  height: 75px;
+  width: 200px;
+  vertical-align: middle;
+  margin-right: 100px;
+}
+
+.code {
+  display: block;
+  font-size: 15px;
+  text-align: left;
+  background-color: #f0f0f0;
+  text-shadow: -1px 1px 2px #000, -1px -1px 2px #fff;
 }
