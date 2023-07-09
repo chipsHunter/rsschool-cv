@@ -71,6 +71,49 @@
     </section>
     <section class="section" id = "code">
       <h2 class="section-title">Code</h2>
+      <ul class="section-item">
+        <li>Java. Return sum of all nums below entered can be devided into 3 and 5
+          <pre>
+            <code class = "code">
+            public class Solution {
+
+            public int solution(int number) {
+              --number;
+              if(number <= 0)
+                return 0;
+              else {
+                if((number % 3 == 0) || (number % 5 == 0) )
+                  return number + solution(number);
+                else return solution(number);
+                }
+            }
+          }</code></pre>
+          
+        </li>
+        <li>C. Append node in binary tree
+          <pre>
+            <code class = "code">
+            struct TREE *insert_node(struct TREE *root, int value) {
+              if (root == NULL) {
+                  root = (struct TREE*)malloc(sizeof(struct TREE));
+                  root->value = value;
+                  root->leftChild = NULL;
+                  root->rightChild = NULL;
+              }
+              else {
+                  if (value < root->value) {
+                      root->leftChild = insert_node(root->leftChild, value);
+                  }
+                  else {
+                      root->rightChild = insert_node(root->rightChild, value);
+                  }
+              }
+              return root;
+          }
+          </code></pre>
+          
+        </li>
+      </ul>
     </section>
   </main>
   <footer class = "footer">
