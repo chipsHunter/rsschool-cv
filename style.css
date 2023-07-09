@@ -14,7 +14,7 @@ body {
 
 .container {
   max-width: 1440px;
-  margin: 0 auto;
+  margin: 0 0;
 }
 
 .main-container {
@@ -22,8 +22,24 @@ body {
   flex-wrap: wrap;
 }
 
+.top-container {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  margin-right: 0;
+  background-color: #2e3c7d;
+}
+
+.bottom-container {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: #2e3c7d; 
+}
+
 .section {
   width: 50%;
+  padding: 50px;
 }
 
 @media (max-width: 768px) {
@@ -43,6 +59,7 @@ body {
   padding: 0 20px;
   line-height: 50px;
   transition: .3s;
+  color:  #b2bef6;
 }
 
 .section-item a {
@@ -74,7 +91,7 @@ html {
   left: 0;
   right: 0;
   height: 2px;
-  width: 100px; /* длина */
+  width: 100px; 
   background: #51226c;
   margin: 0 auto;
 }
@@ -82,4 +99,38 @@ html {
 .image {
   height: 200px;
   width: 120px;
+  margin: 0 50px;
+}
+
+.foot-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  margin: 0 70px;
+}
+
+.foot-item {
+  line-height: 50px;
+  transition: .3s;
+}
+
+.left-item {
+  display: flex;
+  justify-content: flex-start;
+  color:  #b2bef6;
+  margin: 0 20px;
+  margin-left: 100px;
+}
+
+.icon::before {
+  content: '';
+  display: flex;
+  justify-content: flex-end;
+  background-image: url("rs_school_js.svg");
+  background-size: cover;
+  height: 75px;
+  width: 200px;
+  vertical-align: middle;
+  margin-right: 100px;
 }
