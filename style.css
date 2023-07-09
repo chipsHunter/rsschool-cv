@@ -46,13 +46,13 @@ body {
 }
 
 .section-item a {
-  color: #829985;
+  color: #2e3c7d;
   text-decoration: none;
   transition: color 0.5s;
 }
 
 .section-item a:hover {
-  color: #4d2323;
+  color: #51226c;
 }
 
 html {
@@ -77,4 +77,9 @@ html {
   width: 100px; /* длина */
   background: #51226c;
   margin: 0 auto;
+}
+
+.image {
+  height: 200px;
+  width: 120px;
 }
