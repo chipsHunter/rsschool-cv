@@ -74,6 +74,11 @@ body {
   color:  #ffffff;
 }
 
+ .nav-link:hover {
+  color: #2e6c22;
+  transition: 0.5s;
+ }
+
 .section-item a {
   color: #4b5167;
   text-decoration: none;
@@ -148,6 +153,11 @@ html {
   margin-left: 100px;
 }
 
+.left-item a:hover {
+  color: #2e6c22;
+  transition: 0.5s;
+}
+
 .icon::before {
   content: '';
   display: flex;
@@ -158,4 +168,12 @@ html {
   width: 200px;
   vertical-align: middle;
   margin-right: 100px;
+}
+
+.code {
+  display: block;
+  font-size: 15px;
+  text-align: left;
+  background-color: #f0f0f0;
+  text-shadow: -1px 1px 2px #000, -1px -1px 2px #fff;
 }
