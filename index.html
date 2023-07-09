@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>my little app</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class = "header">
+    <div class = "container top-container">
+      <nav class = "nav">
+        <ul class="nav-list">
+          <li class="nav-item"><a href="#contacts" class="nav-link">Contacts</a></li>
+          <li class="nav-item"><a href="#briefly" class="nav-link">Briefly</a></li>
+          <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+          <li class="nav-item"><a href="#languages" class="nav-link">Languages</a></li>
+          <li class="nav-item"><a href="#courses" class="nav-link">Courses</a></li>
+          <li class="nav-item"><a href="#code" class="nav-link">Code</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main class = "main">
+    <div class = "container main-container">
+      <div class="left-panel">
+        <img src="assets/img/image.jpg" alt="my photo" class = "image">
+    <section class="section" id = "contacts">
+      <h2 class="section-title left-section-title">Contacts</h2>
+      <ul class="section-item">
+        <li>Mobile: +375 (29) 996 41-74</li>
+        <li>Gmail: <a href="mailto:hvorostok8@gmail.com">hvorostok8@gmail.com</a></li>
+        <li>Discord: nastyhv (chipsHunter)</li>
+        <li>Telegram: <a href="https://t.me/skelletonchik">skelletonchik</a></li>
+        <li>GitHub: <a href="https://github.com/chipsHunter">chipsHunter</a></li>
+      </ul>
+    </section>
+    <section class="section" id = "courses">
+      <h2 class="section-title left-section-title">Courses</h2>
+      <ul class="section-item">
+        <li>STEM-class RoboClever: <a href="https://github.com/Nightmareterrible/">Java for pupuls</a></li>
+        <li>RS-School: <a href="https://rs.school/js/">JS/FE Pre-School 2023Q2</a> (in process)</li>
+        <li>BSUIR course: <a href="https://www.bsuir.by/ru/kaf-evm/sidorovich-a-s">fundamentals of algorithmization and programming</a></li>
+      </ul>
+    </section>
+    <section class="section" id = "languages">
+      <h2 class="section-title left-section-title">Languages</h2>
+      <ul class="section-item">
+        <li>Russian (native)</li>
+        <li>English (B1)</li>
+        <li>German (A1)</li>
+      </ul>
+    </section>
+      </div>
+    <div class="right-panel">
+      <section class="section" id = "profile">
+        <h1 class = "section-title right-section-title">Anastasia Hvorostova</h1>
+        <h2 class = "section-title right-section-title" title = "i really want to be">front-end dev</h2>
+      </section>
+      <section class="section" id = "briefly" >
+        <h2 class="section-title right-section-title">Briefly</h2>
+        <p class="section-item">I'm a student of BSIUR, future systems engineer. 
+          I'm highly motivated and disciplined person, who can set goal and achieve it. 
+          My aim for near 3 years in Uni find field I'd like to self-develop in and become a programmer with strong skills in this area.</p>
+      </section>
+      <section class="section" id = "skills">
+        <h2 class="section-title right-section-title">Skills</h2>
+        <ul class="section-item">
+          <li>Gamedev: Java</li>
+          <li>Interaction with computer memory: C</li>
+          <li>Front-end: HTML/CSS, JS</li>
+          <li>Version control: Git/GitHub</li>
+        </ul>
+      </section>
+      <section class="section" id = "code">
+        <h2 class="section-title right-section-title">Code</h2>
+        <ul class="section-item">
+          <li>Java. Return sum of all nums below entered can be devided into 3 and 5
+            <pre>
+              <code class = "code">
+              public class Solution {
+  
+              public int solution(int number) {
+                --number;
+                if(number &lt;= 0)
+                  return 0;
+                else {
+                  if((number % 3 == 0) || (number % 5 == 0) )
+                    return number + solution(number);
+                  else return solution(number);
+                  }
+              }
+            }</code></pre>
+            
+          </li>
+          <li>C. Append node in binary tree
+            <pre>
+              <code class = "code">
+              struct TREE *insert_node(struct TREE *root, int value) {
+                if (root == NULL) {
+                    root = (struct TREE*)malloc(sizeof(struct TREE));
+                    root->value = value;
+                    root->leftChild = NULL;
+                    root->rightChild = NULL;
+                }
+                else {
+                    if (value &lt; root->value) {
+                        root->leftChild = insert_node(root->leftChild, value);
+                    }
+                    else {
+                        root->rightChild = insert_node(root->rightChild, value);
+                    }
+                }
+                return root;
+            }
+            </code></pre>
+            
+          </li>
+        </ul>
+      </section>
+    </div>
+  </div>
+  </main>
+  <footer class = "footer">
+    <div class = "container bottom-container">
+      <ul class="foot-list">
+        <li class = "left-item">
+          <div class = "left-item">2023</div>
+          <div><a class = "left-item" href="https://github.com/chipsHunter">chipsHunter</a></div>
+        </li>
+        <li>
+          <a href="https://rs.school/js/" class = "icon"></a>
+        </li>
+      </ul>
+    </div>
+  </footer>
+</body>
+</html>
